@@ -1,0 +1,166 @@
+:root{
+    --White: hsl(0, 0%, 100%);
+--Off-white: hsl(0, 0%, 94%);
+--Light-grey: hsl(0, 0%, 86%);
+--Smokey-grey: hsl(0, 1%, 44%);
+--Off-black: hsl(0, 0%, 8%);
+--Purple: hsl(259, 100%, 65%);
+--Light-red: hsl(0, 100%, 67%);
+}
+
+* {
+    font-family: 'Poppins', sans-serif !important;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+} 
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Light-grey);
+    min-height: 100vh;
+}
+.card{
+    background-color: var(--White);
+    width: 500px;
+    border-radius: 1rem 1rem 9.5rem 1rem;
+
+}
+.container{
+    /* max-width: 80%; */
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+.input-flex{
+    display: flex;
+    gap: 2rem;
+}
+.input-container{
+    display: flex;
+    flex-direction: column;
+}
+.input-container span{
+    text-transform: uppercase;
+    color: var(--Smokey-grey);
+    letter-spacing: 0.1rem;
+    font-size: 12px;
+}
+
+ input{
+    width: 100px;
+    padding: .6rem;
+    border-radius: .4rem;
+    border: 1px solid var(--Light-grey);
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    /* border: none; */
+    /* outline: none; */
+ }
+ input::placeholder{
+    font-size: 1.2rem;
+    font-weight: 800;
+ }
+ .submit-card{
+    display: flex;
+    align-items: center;
+ }
+ .submit-card hr{
+    width: 100%;
+    color: var(--Light-grey);
+ }
+ .submit-btn{
+    border-radius: 50%;
+    padding: 1rem;
+    background-color: var(--Purple);
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    height: 70px;
+ }
+ .submit-btn:hover{
+    background-color: var(--Off-black);
+ }
+ .output h1{
+    font-size: 3rem;
+    font-weight: 800;
+    font-style: italic;
+    height: fit-content;
+    line-height: 1.2; 
+ }
+ .output span{
+    color: var(--Purple);
+    font-style: italic;
+    letter-spacing: 0.8rem;
+    font-size: 3rem;
+ }
+ small{
+    color: var(--Light-red);
+    font-size: 0.7rem;
+    font-style: italic;
+    margin-top: 0.5rem;
+ }
+
+ /* input:focus {
+    border: 2px solid var(--Purple);
+ } */
+ 
+ 
+
+@media screen and (max-width : 500px) {
+    .card{
+        width: 300px;
+        border-radius: 1rem 1rem 5rem 1rem;
+    }
+    .container{
+        padding: 1rem;
+    }
+    .input-flex{
+        margin-bottom: 2.5rem;
+        gap: 0;
+        justify-content: space-between;
+    }
+    .submit-card{
+        position: relative;
+    }
+    .submit-btn{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 50px;
+        height: 50px;
+    }
+    .output{
+        margin-top: 3rem;
+        margin-bottom: 1rem;
+    }
+    .output h1{
+        font-size: 2.5rem;
+    }
+
+    input {
+        width: 80%;
+    }
+    .submit-btn img{
+        transform: scale(0.5);
+    } 
+    .output span{
+        font-size: 2.5rem;
+    }
+    
+    .submit-btn img{
+        transform: scale(0.5);
+    }
+}
