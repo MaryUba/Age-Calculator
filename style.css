@@ -22,14 +22,15 @@ body{
     background-color: var(--Light-grey);
     min-height: 100vh;
 }
+
 .card{
     background-color: var(--White);
     width: 500px;
     border-radius: 1rem 1rem 9.5rem 1rem;
 
 }
+
 .container{
-    /* max-width: 80%; */
     padding: 2rem;
     display: flex;
     flex-direction: column;
@@ -39,14 +40,17 @@ form{
     display: flex;
     flex-direction: column;
 }
+
 .input-flex{
     display: flex;
     gap: 2rem;
 }
+
 .input-container{
     display: flex;
     flex-direction: column;
 }
+
 .input-container span{
     text-transform: uppercase;
     color: var(--Smokey-grey);
@@ -62,21 +66,23 @@ form{
     display: flex;
     align-items: center;
     font-size: 1.2rem;
-    /* border: none; */
-    /* outline: none; */
  }
+
  input::placeholder{
     font-size: 1.2rem;
     font-weight: 800;
  }
+
  .submit-card{
     display: flex;
     align-items: center;
  }
+
  .submit-card hr{
     width: 100%;
     color: var(--Light-grey);
  }
+
  .submit-btn{
     border-radius: 50%;
     padding: 1rem;
@@ -89,9 +95,11 @@ form{
     width: 70px;
     height: 70px;
  }
+
  .submit-btn:hover{
     background-color: var(--Off-black);
  }
+
  .output h1{
     font-size: 3rem;
     font-weight: 800;
@@ -99,12 +107,14 @@ form{
     height: fit-content;
     line-height: 1.2; 
  }
+
  .output span{
     color: var(--Purple);
     font-style: italic;
     letter-spacing: 0.8rem;
     font-size: 3rem;
  }
+ 
  small{
     color: var(--Light-red);
     font-size: 0.7rem;
@@ -112,10 +122,6 @@ form{
     margin-top: 0.5rem;
  }
 
- /* input:focus {
-    border: 2px solid var(--Purple);
- } */
- 
  
 
 @media screen and (max-width : 500px) {
@@ -160,7 +166,4 @@ form{
         font-size: 2.5rem;
     }
     
-    .submit-btn img{
-        transform: scale(0.5);
-    }
 }
