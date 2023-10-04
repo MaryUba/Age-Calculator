@@ -91,7 +91,5 @@ function CalculateDate(){
         output_year.textContent = ageYears;
 
     }
-    else{
-        alert('error');
-    }
+    
 }

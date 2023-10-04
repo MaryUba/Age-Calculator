@@ -40,7 +40,7 @@ Mobile view
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Solution URL here](https://www.frontendmentor.io/solutions/age-calculator-using-javascript-1YfA-w6iDS)
 - Live Site URL: [Live site URL here](https://maryuba.github.io/Age-Calculator/)
 
 ## My process
