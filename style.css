@@ -111,7 +111,6 @@ form{
  .output span{
     color: var(--Purple);
     font-style: italic;
-    letter-spacing: 0.8rem;
     font-size: 3rem;
  }
  

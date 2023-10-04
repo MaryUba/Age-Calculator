@@ -76,6 +76,7 @@ input_year.addEventListener('input', e =>{
 })
 
 function CalculateDate(){
+    event.preventDefault();
     if(isValid){
         let birthday = `${input_month.value}/${input_day.value}/${input_year.value}`;
         console.log(birthday);
