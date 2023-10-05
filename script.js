@@ -17,7 +17,13 @@ const error_month = document.querySelector(".error-month");
 const error_year = document.querySelector(".error-year");
 // submit_btn.addEventListener('click', CalculateDate)
 
+// Sounds effect
+const successSound = new Audio('./Sounds/ping.mp3');
+const errorSound = new Audio('./Sounds/error.mp3');
 
+const playSound = (sound) => {
+    sound.play();
+  };
 
 input_day.addEventListener('input', e =>{
     if(input_day.value > 31){
@@ -53,7 +59,7 @@ input_month.addEventListener('input', e =>{
     } else{
         isValid = true;
         error_month.textContent = "";
-    }
+    } 
 })
 
 input_year.addEventListener('input', e =>{
@@ -84,13 +90,21 @@ function CalculateDate(){
         let ageDiffMill = Date.now() - birthdayObj;
         let ageDate = new Date(ageDiffMill);
         let ageYears = ageDate.getUTCFullYear() -1970;
-        let ageMonth = ageDate.getUTCMonth();
+        let ageMonth = ageDate.getUTCMonth() +1;
         let ageDay = ageDate.getUTCDay() ;
+        isValid = true;
+        playSound(successSound);
+        
         // DISPLAY
         output_day.textContent = ageDay;
         output_month.textContent = ageMonth;
         output_year.textContent = ageYears;
 
+    }
+    else{
+        playSound(errorSound);
+        alert("Error: Please enter a valid date")
+        
     }
     
 }
